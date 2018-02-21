@@ -10,7 +10,7 @@ var params = {
   MediaSampleRateHertz: 0 
 };
 
-aws.config.region_name = "us-east";
+aws.config.region_name = "us-east-1";
 
 trans.startTranscriptionJob(params, function (err, data) {
   if (err) console.log(err, err.stack);

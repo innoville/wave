@@ -9,6 +9,9 @@ var params = {
   TranscriptionJobName: 'stt test',
   MediaSampleRateHertz: 0 
 };
+
+aws.config.region_name = "us-east";
+
 trans.startTranscriptionJob(params, function (err, data) {
   if (err) console.log(err, err.stack);
   else console.log (data);

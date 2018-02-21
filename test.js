@@ -1,11 +1,11 @@
 var aws = require('aws-sdk');
 var trans = new aws.TranscribeService({apiVersion: '2017-10-26'});
 var params = {
-  LanguageCode: en-US,
+  LanguageCode: "en-US",
   Media: {
     MediaFileUri: "./test.mp4" 
   },
-  MediaFormat: mp4,
+  MediaFormat: "mp4",
   TranscriptionJobName: 'stt test',
   MediaSampleRateHertz: 0 
 };
